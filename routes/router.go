@@ -11,6 +11,7 @@ func InitRouter() *gin.Engine {
 	{
 		userController := new(controllers.UserController)
 		v1.GET("/users", userController.Index)
+		v1.GET("/users/store", userController.Store)
 
 	}
 
